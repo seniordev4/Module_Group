@@ -1,4 +1,4 @@
-<div class="col-auto col-md-3 col-xl-2 px-sm-2 px-0 side-nav">
+<div class="col-auto col-md-3 col-xl-2 px-sm-2 px-0 side-nav" style="height: 100vh; overflow-y: auto">
     <div class="d-flex flex-column align-items-center align-items-sm-start px-3 pt-2 text-white min-vh-100">
         <a href="/" class="mx-auto text-white text-decoration-none">
             <img src="{{ asset('logo.png') }}" class="img-fluid d-none d-sm-inline rounded-start p-4" width="140px"

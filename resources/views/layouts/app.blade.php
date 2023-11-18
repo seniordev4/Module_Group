@@ -12,8 +12,9 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
     @livewireStyles
 </head>
-<body>
-    <div class="loading-overlay">
+
+<body style="overflow: hidden">
+    <div class="loading-overlay ">
         <div class="spinner-grow text-secondary" role="status"></div>
         <div class="spinner-grow text-secondary" role="status"></div>
         <div class="spinner-grow text-secondary" role="status"></div>
@@ -39,9 +40,10 @@
     @livewireScripts
     <script src="{{ asset('js/app.js') }}"></script>
     <script>
-        const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
-        const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))
+    const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
+    const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))
     </script>
     @stack('scripts')
 </body>
+
 </html>
